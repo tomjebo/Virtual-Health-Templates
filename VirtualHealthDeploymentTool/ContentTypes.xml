@@ -1,0 +1,74 @@
+﻿<ContentTypes Group="Virtual Patient Care">
+  <!--<ContentType ID="0x010046C8A254CB775649B4FFFB2865597A710048EFD8A869529B4E912D5A32C151F6B2" Name="VirtualPatientCare" Group="Virtual Patient Care">
+    <FieldRef ID="{63bb90d2-684b-46bf-936b-b335f27adf6e}" Name="MeetingId" AllowDeletion="TRUE"/>
+  </ContentType>-->
+  <ContentType ID="0x010046C8A254CB775649B4FFFB2865597A710400D739CCFA4AD93741BF4E946810878574" Name="Attendees" Group="Virtual Patient Care">
+    <FieldRef ID="{82E57161-5F63-4190-8DEF-EC8C70269F35}" Name="SurveyerName" AllowDeletion="TRUE"/>    
+    <!--<FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="EMail" AllowDeletion="TRUE"/>
+    <FieldRef ID="{1f2b337f-2b14-439f-9e8d-0be5f584d00a}" Name="JoinTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{bb19b277-697e-41a9-9073-e954bf774d1c}" Name="EndTime" AllowDeletion="TRUE"/>-->
+    <FieldRef ID="{95bc6605-4ff7-46e1-b2bf-e0279db6a21f}" Name="BrowserType" AllowDeletion="TRUE"/>
+    <FieldRef ID="{4831c37b-f29b-4dc0-aa8f-9dbaca40a7d0}" Name="Bandwidth" AllowDeletion="TRUE"/>
+    <FieldRef ID="{8336068a-85e7-4776-a1d7-c62f6e490dac}" Name="AudioIssues" AllowDeletion="TRUE"/>
+    <FieldRef ID="{90edfca5-dc8d-4171-bbf4-83a7882c6c7f}" Name="VideoIssues" AllowDeletion="TRUE"/>
+    <FieldRef ID="{155eebb5-f0e8-4c41-8260-617cecf2281b}" Name="CallRating" AllowDeletion="TRUE"/>
+    <FieldRef ID="{e7fd3e48-7b75-44ce-8ba1-d82de13065a2}" Name="Latency" AllowDeletion="TRUE"/>
+    <!--<FieldRef ID="{52578fc3-1f01-4f4d-b016-94ccbcf428cf}" Name="_Comments" AllowDeletion="TRUE"/>-->
+    <FieldRef ID="{56f6b887-3a9d-4f24-bc23-34bbaf9cdf5a}" Name="AudioIssue" AllowDeletion="TRUE"/>
+    <FieldRef ID="{a83e0a67-69ce-4797-b6a0-16a575805b01}" Name="VideoIssue" AllowDeletion="TRUE"/>
+    <FieldRef ID="{14d0aee2-0388-41a7-a69c-8c7f1491f26e}" Name="SurveyerComments" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x0100E45D41B14537B9448D968CBF10BF3D46005B8625D23C44DB4FAD464E20133CF08A" Name="AvailableDates" Group="Virtual Patient Care">
+    <FieldRef ID="{ff91fdb8-707a-493f-a01f-e3b8f1311f91}" Name="AppointmentName" AllowDeletion="TRUE"/>
+    <FieldRef ID="{105319f5-315f-455d-b25c-aae706a1f807}" Name="AvailableDate" AllowDeletion="TRUE"/>
+    <FieldRef ID="{6d5cc86b-afc0-4eb5-9c64-0fa26bfc54f8}" Name="AvailableTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{be148067-9648-4d59-aba5-295a8c719f09}" Name="Available" AllowDeletion="TRUE"/>
+    <FieldRef ID="{7e332b04-ad5b-4ac1-8bcf-25a9241a1482}" Name="AppointmentDetails" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x010046C8A254CB775649B4FFFB2865597A7101009E84E9F5D12E5848ABE637D861DC21C3" Name="Configuration" Group="Virtual Patient Care">
+    <FieldRef ID="{1853c171-2bee-4339-b23c-41af9dc4959f}" Name="ConfigKey" AllowDeletion="TRUE"/>
+    <FieldRef ID="{9aa30306-16ba-4c61-92cb-25a94a153270}" Name="ConfigValue" AllowDeletion="TRUE"/>
+    <FieldRef ID="{63bb90d2-684b-46bf-936b-b335f27adf6e}" Name="MeetingId" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x010046C8A254CB775649B4FFFB2865597A71050063276A4E110BCF4D8383F91BD0CD70F0" Name="MeetingDetails" Group="Virtual Patient Care">
+    <FieldRef ID="{63bb90d2-684b-46bf-936b-b335f27adf6e}" Name="MeetingId" AllowDeletion="TRUE"/>
+    <FieldRef ID="{ded0dc7a-c5aa-4ee1-837e-4fa2e10dc361}" Name="StartTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{bb19b277-697e-41a9-9073-e954bf774d1c}" Name="EndTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{d3af4802-44bb-4eb3-b78e-be1ca1797f4c}" Name="Organizer" AllowDeletion="TRUE"/>
+    <FieldRef ID="{8cc004ec-5d64-4eeb-8a8f-889e1652b128}" Name="MeetingDetails" AllowDeletion="TRUE"/>
+    <FieldRef ID="{0e7bbfee-66f0-4a1a-80f7-7c772e3f3764}" Name="Status" AllowDeletion="TRUE"/>
+    <FieldRef ID="{8336068a-85e7-4776-a1d7-c62f6e490dac}" Name="AudioIssues" AllowDeletion="TRUE"/>
+    <FieldRef ID="{90edfca5-dc8d-4171-bbf4-83a7882c6c7f}" Name="VideoIssues" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x010046C8A254CB775649B4FFFB2865597A710200C0C39623AAF69C4CAD4A0BB7E8F707A9" Name="OnlineMeetingDetails" Group="Virtual Patient Care">
+    <FieldRef ID="{63BB90D2-684B-46BF-936B-B335F27ADF6E}" Name="MeetingId" AllowDeletion="TRUE"/>
+    <FieldRef ID="{d75d8aac-4bad-428d-a60a-54f38323ba85}" Name="OnlineMeetingURI" AllowDeletion="TRUE"/>
+    <FieldRef ID="{88ee56bc-88d9-445e-a8d5-3f8d0c30a7a9}" Name="Attendees" AllowDeletion="TRUE"/>
+    <FieldRef ID="{bb6b4077-d965-4ec2-8981-488938adee97}" Name="JoinURL" AllowDeletion="TRUE"/>
+    <FieldRef ID="{8cc004ec-5d64-4eeb-8a8f-889e1652b128}" Name="MeetingDetails" AllowDeletion="TRUE"/>
+    <FieldRef ID="{d3af4802-44bb-4eb3-b78e-be1ca1797f4c}" Name="Organizer" AllowDeletion="TRUE"/>
+    <FieldRef ID="{ded0dc7a-c5aa-4ee1-837e-4fa2e10dc361}" Name="StartTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{bb19b277-697e-41a9-9073-e954bf774d1c}" Name="EndTime" AllowDeletion="TRUE"/>
+    <FieldRef ID="{a59f2eb2-fee1-487b-a02e-37f13a5c0a31}" Name="PatientName" AllowDeletion="TRUE"/>
+    <FieldRef ID="{0e7bbfee-66f0-4a1a-80f7-7c772e3f3764}" Name="Status" AllowDeletion="TRUE"/>
+    <FieldRef ID="{f1486c4e-efdd-41a7-b9f6-c5762b3c5851}" Name="QuestionnaireRequired" AllowDeletion="TRUE"/>
+    <FieldRef ID="{9536d447-f2b3-4cd3-b241-ea0f3b25f092}" Name="QuestionCategory" AllowDeletion="TRUE"/>
+    <FieldRef ID="{AFEE798B-4A2E-45D8-8590-4B0529681D56}" Name="AppointmentDate" AllowDeletion="TRUE"/>  
+    <FieldRef ID="{B0D55F5A-7913-4952-B6CE-972F99F9C44E}" Name="HasPatientJoined" AllowDeletion="TRUE"/>
+    <FieldRef ID="{EC251B53-2386-4584-AEF6-E78D2AB384E7}" Name="IsDevicesTestDone" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x0100913039980086894481C99859E8D2E7D500810AFD1A53A97740980735BEE900DB7D" Name="Questionnaires" Group="Virtual Patient Care">
+    <FieldRef ID="{574d784b-dc78-4a16-a745-9af8d02dd5d1}" Name="Question" AllowDeletion="TRUE"/>
+    <FieldRef ID="{ff986940-a29d-4c47-869b-eafdc4eb199f}" Name="AllowMultipleSelection" AllowDeletion="TRUE"/>
+    <FieldRef ID="{f3f24d76-f9a6-476a-adbb-4ee7dc03a675}" Name="Options" AllowDeletion="TRUE"/>
+    <FieldRef ID="{9536d447-f2b3-4cd3-b241-ea0f3b25f092}" Name="QuestionCategory" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x0100AD380BEF5DF55841B21A3DDDAA76DB0800792EF6656E986C43BC5918FDFF491086" Name="QuestionnairResponses" Group="Virtual Patient Care">
+    <FieldRef ID="{f4178454-dade-41aa-b734-bfa9c2a6eb54}" Name="Response" AllowDeletion="TRUE"/>
+  </ContentType>
+  <ContentType ID="0x01002BA9175118D37F47935F50EED98E13605E36D98099FC463E9111A5F689BD14F8" Name="Peers" Group="Virtual Patient Care">
+    <FieldRef ID="{DC0E7219-E4D7-44CA-8CCB-933078453E33}" Name="Designation" AllowDeletion="TRUE"/>
+    <FieldRef ID="{3CA04394-9E76-438A-982B-58FCD7BBE0D3}" Name="HospitalDepartment" AllowDeletion="TRUE"/>
+    <FieldRef ID="{B4DBB390-9EEB-4DB8-AC6E-890012BD8DA9}" Name="PeerEmailAddress" AllowDeletion="TRUE"/>
+  </ContentType>
+</ContentTypes>

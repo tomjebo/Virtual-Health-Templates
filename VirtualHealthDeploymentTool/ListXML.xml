@@ -1,0 +1,35 @@
+﻿<Site>
+  <ListInstance Title="Available Dates" TemplateType="100" Url="lists/AvailableDates">
+    <AddContentType Name="AvailableDates" />
+  </ListInstance>
+  <ListInstance Title="Online Meeting Details" TemplateType="100" Url="lists/OnlineMeetingDetails">
+    <AddContentType Name="OnlineMeetingDetails" />
+  </ListInstance>
+  <ListInstance Title="Configuration" TemplateType="100" Url="lists/Configuration">
+    <AddContentType Name="Configuration" />
+  </ListInstance>
+  <ListInstance Title="Attendees" TemplateType="100" Url="lists/Attendees">
+    <AddFields>
+      <Field Type="Lookup" Name="OnlineMeetingId" StaticName="OnlineMeetingId" DisplayName="Meeting Id" List="Attendees" ShowField="ID" Group="Virtual Patient Care" />
+    </AddFields>
+    <AddContentType Name="Attendees" />
+  </ListInstance>
+  <ListInstance Title="Meeting Details" TemplateType="100" Url="lists/MeetingDetails">
+    <AddContentType Name="MeetingDetails" />
+  </ListInstance>
+  <ListInstance Title="Questionnaires" TemplateType="100" Url="lists/Questionnaires">
+    <AddContentType Name="Questionnaires" />
+  </ListInstance>
+  <ListInstance Title="QuestionnairResponses" TemplateType="100" Url="lists/QuestionnairResponses">
+    <AddFields>
+      <Field Type="Lookup" Name="QuestionId" StaticName="QuestionId" DisplayName="QuestionId" List="Questionnaires" ShowField="ID" Group="Virtual Patient Care" />
+      <Field Type="Lookup" Name="MeetingIdLookUp" StaticName="MeetingId" DisplayName="MeetingId" List="Online Meeting Details" ShowField="ID" Group="Virtual Patient Care" />
+    </AddFields>
+    <AddContentType Name="QuestionnairResponses" />
+  </ListInstance>
+  <ListInstance Title="Peers" TemplateType="100" Url="lists/Peers">
+    <AddContentType Name="Peers" />
+  </ListInstance>
+  <ListInstance Title="Appointments Page" TemplateType="119" Url="lists/AppointmentsPage">
+  </ListInstance>
+</Site>

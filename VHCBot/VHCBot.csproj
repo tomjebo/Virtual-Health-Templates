@@ -148,6 +148,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="VHCBotLuis.json" />
+    <None Include="Properties\PublishProfiles\legalbotapp - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

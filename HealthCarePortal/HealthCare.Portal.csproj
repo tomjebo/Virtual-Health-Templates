@@ -574,6 +574,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\legalapptportaldemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.11.3.intellisense.js" />
     <Content Include="Scripts\common\Log.js" />
     <Content Include="Scripts\fullcalendar.js" />

@@ -1,0 +1,39 @@
+﻿<Lists>
+  <List name="Configuration">
+    <Item>
+      <Field name="Title" value="AllowLobby" />
+      <Field name="ConfigKey" value="AllowLobby" />
+      <Field name="ConfigValue" value="True" />
+    </Item>
+    <Item>
+      <Field name="Title" value="CalculateBandwidthDuringConference" />
+      <Field name="ConfigKey" value="CalculateBandwidthDuringConference" />
+      <Field name="ConfigValue" value="False" />
+    </Item>
+    <Item>
+      <Field name="Title" value="DefaultBrowser" />
+      <Field name="ConfigKey" value="DefaultBrowser" />
+      <Field name="ConfigValue" value="IE Explorer" />
+    </Item>
+    <Item>
+      <Field name="Title" value="MeetingOpenModeInBrowser" />
+      <Field name="ConfigKey" value="MeetingOpenModeInBrowser" />
+      <Field name="ConfigValue" value="True" />
+    </Item>
+    <Item>
+      <Field name="Title" value="TimeOfJoiningCall" />
+      <Field name="ConfigKey" value="TimeOfJoiningCall" />
+      <Field name="ConfigValue" value="False" />
+    </Item>
+    <Item>
+      <Field name="Title" value="AllowPeerChatControl" />
+      <Field name="ConfigKey" value="AllowPeerChatControl" />
+      <Field name="ConfigValue" value="True" />
+    </Item>
+    <Item>
+      <Field name="Title" value="AllowTrustedApiMeeting" />
+      <Field name="ConfigKey" value="AllowTrustedApiMeeting" />
+      <Field name="ConfigValue" value="True" />
+    </Item>
+  </List>
+</Lists>

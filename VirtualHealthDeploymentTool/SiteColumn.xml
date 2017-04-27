@@ -1,0 +1,105 @@
+﻿<SiteColumns Group="Virtual Patient Care">
+  <!-- Columsn of Online Meeting Details List -->
+  
+  <Field ID="{63BB90D2-684B-46BF-936B-B335F27ADF6E}" DisplayName="Meeting Id" Name="MeetingId" Type="Text" Group="Virtual Patient Care"/>
+  <Field ID="{D75D8AAC-4BAD-428D-A60A-54F38323BA85}" Name="OnlineMeetingURI" DisplayName="Online Meeting URI" Type="Note" NumLines="1" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+  <Field ID="{88EE56BC-88D9-445E-A8D5-3F8D0C30A7A9}" Name="Attendees" DisplayName="Attendees" Type="Note" NumLines="1" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+  <Field ID="{BB6B4077-D965-4EC2-8981-488938ADEE97}" Name="JoinURL" DisplayName="Join URL" Type="Note" NumLines="1" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+  <Field ID="{8CC004EC-5D64-4EEB-8A8F-889E1652B128}" Name="MeetingDetails" DisplayName="Meeting Details" Type="Note" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+  <Field ID="{D3AF4802-44BB-4EB3-B78E-BE1CA1797F4C}" Name="Organizer" DisplayName="Organizer" Type="Text"  Group="Virtual Patient Care"/>
+  <Field ID="{DED0DC7A-C5AA-4EE1-837E-4FA2E10DC361}" Name="StartTime" DisplayName="Start Time" Type="DateTime" Group="Virtual Patient Care"/>
+  <Field ID="{BB19B277-697E-41A9-9073-E954BF774D1C}" Name="EndTime" DisplayName="End Time" Type="DateTime" Group="Virtual Patient Care"/>
+  <Field ID="{A59F2EB2-FEE1-487B-A02E-37F13A5C0A31}" Name="PatientName" DisplayName="Patient Name" Type="Text" Group="Virtual Patient Care"/>
+  <Field ID="{0E7BBFEE-66F0-4A1A-80F7-7C772E3F3764}" Name="Status" DisplayName="Meeting Status" Type="Text" Group="Virtual Patient Care"/>
+  <Field ID="{AFEE798B-4A2E-45D8-8590-4B0529681D56}" Name="AppointmentDate" DisplayName="Appointment Date" Type="DateTime" Format="DateOnly" Group="Virtual Patient Care"/>
+  <Field ID="{F1486C4E-EFDD-41A7-B9F6-C5762B3C5851}" Type="Boolean" DisplayName="QuestionnaireRequired" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="QuestionnaireRequired" Name="QuestionnaireRequired" Group="Virtual Patient Care">
+    <Default>0</Default>
+  </Field>
+  <Field ID="{B0D55F5A-7913-4952-B6CE-972F99F9C44E}" Type="Boolean" DisplayName="Has Patient Joined" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="HasPatientJoined" Name="HasPatientJoined" Group="Virtual Patient Care">
+    <Default>0</Default>
+  </Field>
+  <Field ID="{EC251B53-2386-4584-AEF6-E78D2AB384E7}" Type="Boolean" DisplayName="Is Devices Test Done" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="IsDevicesTestDone" Name="IsDevicesTestDone" Group="Virtual Patient Care">
+    <Default>0</Default>
+  </Field>
+  <Field ID="{9536D447-F2B3-4CD3-B241-EA0F3B25F092}" Type="Choice" Name="QuestionCategory" DisplayName="QuestionCategory" Format="Dropdown" Group="Virtual Patient Care">
+    <Default>Diabetic</Default>Yes
+    <CHOICES>
+      <CHOICE>Diabetic</CHOICE>
+      <CHOICE>BP</CHOICE>
+      <CHOICE>Fever</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <!-- Columns of Available Dates List -->
+  <Field ID="{FF91FDB8-707A-493F-A01F-E3B8F1311F91}" Name="AppointmentName" DisplayName="Appointment Name" Type="Text" Group="Virtual Patient Care"/>
+  <Field ID="{6D5CC86B-AFC0-4EB5-9C64-0FA26BFC54F8}" Name="AvailableTime" DisplayName="Available Time" Type="DateTime" Group="Virtual Patient Care"/>
+  <Field ID="{BE148067-9648-4D59-ABA5-295A8C719F09}" Name="Available" DisplayName="Available" Type="Text"/>
+  <Field ID="{105319F5-315F-455D-B25C-AAE706A1F807}" Name="AvailableDate" DisplayName="Available Date" Type="DateTime" Format="DateOnly" Group="Virtual Patient Care"/>
+  <Field ID="{7E332B04-AD5B-4AC1-8BCF-25A9241A1482}" Name="AppointmentDetails" DisplayName="Appointment Details" Type="Note" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+
+  <!-- Columns of Configuration List -->
+  <Field ID="{1853C171-2BEE-4339-B23C-41AF9DC4959F}" Name="ConfigKey" DisplayName="Config Key" Type="Note" NumLines="1" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+  <Field ID="{9AA30306-16BA-4C61-92CB-25A94A153270}" Name="ConfigValue" DisplayName="Config Value" Type="Note" NumLines="1" RichText="FALSE" Sortable="FALSE" Group="Virtual Patient Care"/>
+
+  <!-- Columns of Attendees list-->
+  <Field ID="{82E57161-5F63-4190-8DEF-EC8C70269F35}" Type="Text" DisplayName="SurveyerName" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="SurveyerName" Name="SurveyerName" Group="Virtual Patient Care"/>
+  <!--<Field ID="{7C8AF84C-B890-403E-BED5-44A9DFE23DF4}" Type="Text" DisplayName="Email" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="Email" Name="UserEmail" Group="Virtual Patient Care"/>-->
+  <!--<Field ID="{1F2B337F-2B14-439F-9E8D-0BE5F584D00A}" Type="DateTime" DisplayName="JoinTime" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" FriendlyDisplayFormat="Disabled" StaticName="JoinTime" Name="JoinTime" Group="Virtual Patient Care"/>-->
+  <Field ID="{95BC6605-4FF7-46E1-B2BF-E0279DB6A21F}" Type="Text" DisplayName="BrowserType" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255"  StaticName="BrowserType" Name="BrowserType" Group="Virtual Patient Care"/>
+  <Field ID="{4831C37B-F29B-4DC0-AA8F-9DBACA40A7D0}" Type="Number" Calculated="FALSE" DisplayName="Bandwidth" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="Bandwidth" Name="Bandwidth" Group="Virtual Patient Care"/>
+  <Field ID="{8336068A-85E7-4776-A1D7-C62F6E490DAC}" Type="Text" DisplayName="Audio Issues" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="AudioIssues" Name="AudioIssues" Group="Virtual Patient Care"/>
+  <Field ID="{90EDFCA5-DC8D-4171-BBF4-83A7882C6C7F}" Type="Text" DisplayName="Video Issues" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="VideoIssues" Name="VideoIssues" Group="Virtual Patient Care"/>
+  <Field ID="{155EEBB5-F0E8-4C41-8260-617CECF2281B}" Type="Number" Calculated="FALSE" DisplayName="CallRating" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="CallRating" Name="CallRating" Group="Virtual Patient Care"/>
+  <Field ID="{E7FD3E48-7B75-44CE-8BA1-D82DE13065A2}" Name="Latency" FromBaseType="FALSE" Type="Number" DisplayName="Latency" Description="Latency test of participants endpoint" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="Latency" Group="Virtual Patient Care"/>
+  <!--<Field ID="{F556840E-3EA0-4C27-96B4-BBAE34D5C670}" Type="Note" DisplayName="Comments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" StaticName="Comments" Name="UserComments" Group="Virtual Patient Care"/>-->
+  <Field ID="{56F6B887-3A9D-4F24-BC23-34BBAF9CDF5A}" Name="AudioIssue" FromBaseType="FALSE" Type="MultiChoice" DisplayName="Audio Issue" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" FillInChoice="FALSE" StaticName="AudioIssue" Group="Virtual Patient Care">
+    <CHOICES>
+      <CHOICE>Distorted Speech</CHOICE>
+      <CHOICE>Background Noise</CHOICE>
+      <CHOICE>Muffled Speech</CHOICE>
+      <CHOICE>Echo</CHOICE>
+      <CHOICE>None</CHOICE>
+    </CHOICES>
+    <Default>None</Default>
+  </Field>
+  <Field ID="{A83E0A67-69CE-4797-B6A0-16A575805B01}" Type="MultiChoice" DisplayName="Video Issue" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" FillInChoice="FALSE" StaticName="VideoIssue" Name="VideoIssue" Group="Virtual Patient Care">
+    <CHOICES>
+      <CHOICE>Distorted Video</CHOICE>
+      <CHOICE>Hazzy Video</CHOICE>
+      <CHOICE>Video Stuck</CHOICE>
+      <CHOICE>None</CHOICE>
+    </CHOICES>
+    <Default>None</Default>
+  </Field>
+  <Field ID="{14D0AEE2-0388-41A7-A69C-8C7F1491F26E}" Type="Note" NumLines="5" RichText="FALSE" Sortable="FALSE" DisplayName="Surveyer Comments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="SurveyerComments" Name="SurveyerComments" Group="Virtual Patient Care"/>
+
+  <!-- Columns of Meeting Details list-->
+
+
+  <!-- Columns for Questionnaire list-->
+  <Field ID="{574D784B-DC78-4A16-A745-9AF8D02DD5D1}" Type="Text" DisplayName="Question" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="Question" Name="Question" Group="Virtual Patient Care"/>
+  <Field ID="{FF986940-A29D-4C47-869B-EAFDC4EB199F}" Type="Boolean" DisplayName="AllowMultipleSelection" EnforceUniqueValues="FALSE" Indexed="FALSE" StaticName="AllowMultipleSelection" Name="AllowMultipleSelection" Group="Virtual Patient Care">
+    <Default>0</Default>
+  </Field>
+  <Field ID="{F3F24D76-F9A6-476A-ADBB-4EE7DC03A675}" Type="Text" DisplayName="Options" Description="Options separated by semicolon ( ; )" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="Options" Name="Options" Group="Virtual Patient Care"/>
+
+  <!--Columns for Questionnaire list -->
+  <Field ID="{F4178454-DADE-41AA-B734-BFA9C2A6EB54}" Type="Text" DisplayName="Response" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="Response" Name="Response" Group="Virtual Patient Care"/>
+  <!--Columns for Peers list-->
+  <Field ID="{DC0E7219-E4D7-44CA-8CCB-933078453E33}" Type="Text" DisplayName="Designation" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="Designation" Name="Designation" Group="Virtual Patient Care"/>
+  <Field ID="{3CA04394-9E76-438A-982B-58FCD7BBE0D3}" Type="MultiChoice" DisplayName="Hospital Department" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" FillInChoice="FALSE" StaticName="HospitalDepartment" Name="HospitalDepartment" Group="Virtual Patient Care">
+    <CHOICES>
+      <CHOICE>ENT</CHOICE>
+      <CHOICE>Emergency</CHOICE>
+      <CHOICE>Cardiology</CHOICE>
+      <CHOICE>Gastroenterology</CHOICE>
+      <CHOICE>Gynaecology</CHOICE>
+      <CHOICE>Haematology</CHOICE>
+      <CHOICE>Nephrology</CHOICE>
+      <CHOICE>Diabeties</CHOICE>
+    </CHOICES>
+    <Default>Diabeties</Default>
+  </Field>
+  <Field ID="{B4DBB390-9EEB-4DB8-AC6E-890012BD8DA9}" Type="Text" DisplayName="Peer Email Address" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" StaticName="PeerEmailAddress" Name="PeerEmailAddress" Group="Virtual Patient Care"/>
+</SiteColumns>
+
